@@ -25,6 +25,8 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'dotenv-rails'
 gem 'hamlit'
+gem 'sassc-rails'
+gem 'bootstrap', '~> 5.2.0'
 
 gem 'omniauth'
 gem 'omniauth-google-oauth2'

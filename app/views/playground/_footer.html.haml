@@ -1,0 +1,4 @@
+.box
+  .row
+    .col.text-start= current_user.email
+    .col.text-end= link_to "Logout", destroy_user_session_path, data: { 'turbo-method': :delete }

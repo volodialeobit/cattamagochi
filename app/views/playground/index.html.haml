@@ -1,7 +1,7 @@
-- if user_signed_in?
-  = current_user.email
+= render 'header'
 
-  = link_to "Logout", destroy_user_session_path, data: { 'turbo-method': :delete }
-- else
-  = link_to "Log in with Google", user_google_oauth2_omniauth_authorize_path,
-  method: :post, data: { turbo: false }
+.row
+  .col-8= render 'pet_state'
+  .col-4= render 'pet_actions'
+
+= render 'footer'
